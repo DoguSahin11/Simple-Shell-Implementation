@@ -1,0 +1,6 @@
+mainSetup.c
+myshell
+myshell.c
+test_out.txt
+test_output.txt
+"merhaba"
