@@ -1,0 +1,34 @@
+SIMPLE LINUX SHELL
+===================
+
+Description
+
+A custom command-line shell implemented in C. It supports standard commands, input/output redirection, and background processes.
+
+How to Compile
+--------------
+gcc -o myshell myshell.c
+
+How to Run
+----------
+./myshell
+
+Key Features & Usage
+--------------------
+1. Standard Commands:
+   myshell: ls -l
+   myshell: ps aux
+
+2. Redirection:
+   myshell: ls > file.txt      (Write output to file)
+   myshell: date >> log.txt    (Append to file)
+   myshell: sort < data.txt    (Read input from file)
+
+3. Background Processing:
+   myshell: sleep 5 &
+
+4. Built-in Commands:
+   - alias name "command"
+   - unalias name
+   - fg %<pid>
+   - exit
