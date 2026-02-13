@@ -6,23 +6,23 @@ A lightweight, custom command-line interface (CLI) implementation in C for Linux
 
 This shell mimics standard Linux shell behavior with the following capabilities:
 
-* [cite_start]**Command Execution:** Executes standard Linux commands (e.g., `ls`, `ps`, `grep`) by searching the `PATH` environment variable[cite: 13, 98].
-* [cite_start]**I/O Redirection:** Supports input and output redirection for file operations[cite: 55, 98]:
+* **Command Execution:** Executes standard Linux commands (e.g., `ls`, `ps`, `grep`) by searching the `PATH` environment variable[cite: 13, 98].
+* **I/O Redirection:** Supports input and output redirection for file operations[cite: 55, 98]:
     * `>` : Overwrite standard output to a file.
     * `>>`: Append standard output to a file.
     * `<` : Read standard input from a file.
     * `2>`: Redirect standard error to a file.
-* [cite_start]**Background Processing:** Runs commands in the background using the `&` operator[cite: 19, 98].
+* **Background Processing:** Runs commands in the background using the `&` operator[cite: 19, 98].
 * **Process Management:**
     * [cite_start]Creating new processes using `fork()` and `execv()`[cite: 11, 98].
     * [cite_start]Handling zombie processes with `waitpid()`[cite: 22, 98].
     * [cite_start]`fg %<pid>` command to bring background jobs to the foreground[cite: 51, 98].
 * **Built-in Commands:**
-    * [cite_start]`alias` / `unalias`: Create and remove custom shortcuts for commands[cite: 24, 98].
-    * [cite_start]`exit`: Safely terminates the shell (prevents exit if background tasks are active)[cite: 53, 98].
+    * `alias` / `unalias`: Create and remove custom shortcuts for commands[cite: 24, 98].
+    * `exit`: Safely terminates the shell (prevents exit if background tasks are active)[cite: 53, 98].
 * **Signal Handling:**
-    * [cite_start]`Ctrl+Z` (SIGTSTP): Stops the foreground process[cite: 49, 98].
-    * [cite_start]`Ctrl+C` (SIGINT): Ignored by the shell to prevent accidental closure[cite: 98].
+    * `Ctrl+Z` (SIGTSTP): Stops the foreground process[cite: 49, 98].
+    * `Ctrl+C` (SIGINT): Ignored by the shell to prevent accidental closure[cite: 98].
 
 ## Technical Implementation
 
